@@ -1,4 +1,10 @@
 Ticketee::Application.routes.draw do
+  
+  root :to => "projects#index"
+  
+  resources :projects
+  
+  
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
@@ -12,7 +18,7 @@ Ticketee::Application.routes.draw do
 
   # Sample resource route (maps HTTP verbs to controller actions automatically):
   #   resources :products
-
+  
   # Sample resource route with options:
   #   resources :products do
   #     member do
@@ -49,7 +55,8 @@ Ticketee::Application.routes.draw do
   # You can have the root of your site routed with "root"
   # just remember to delete public/index.html.
   # root :to => 'welcome#index'
-
+  
+  
   # See how all your routes lay out with "rake routes"
 
   # This is a legacy wild controller route that's not recommended for RESTful applications.
